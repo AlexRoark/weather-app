@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Aeonik"; 
+    src: url("../fonts/Aeonik-Regular.otf") format("opentype"); 
+    font-weight: normal;
+    } 
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-family: Aeonik, Arial, sans-serif;
+}
+
+.app_wrapper {
+    margin-top: 10vh;
+}
+
+.background_blur {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: #fff url('../src/day.jpg') no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.day {
+    background: #fff url('../src/day.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(2px);
+}
+
+.night {
+    background: #000 url('../src/night.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(2px);
+}
+
+.logotype {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #393b44;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.logotype span:first-of-type {
+    font-size: 8vw;
+    line-height: 85%;
+}
+
+.logotype img {
+    width: 7vw;
+}
+
+.location {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 30px;
+    background: rgba(57,59,68, 0.6);
+    text-align: center;
+}
+
+#flag {
+    opacity: 0.6;
+}
+
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#weather_ico {
+    width: 13vw;
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
+}
+
+.main .title {
+    font-size: 9vw;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
+}
+
+.main .description {
+    color: #ababab;
+    font-size: 2vw;
+    text-transform: capitalize;
+}
+
+.degree {
+    font-size: 9vw;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
+}
